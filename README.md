@@ -1,14 +1,14 @@
-#Project Title
+# Project Title
 Website Re-design : Thames Valley Anglers Association Website
 
-#Project Description
+# Project Description
 
 The focus is to improve UX and UI Design, as the website at the moment isn't very user friendly
 
-#Project Status
+# Project Status
 The website is currently at a static stage, working towards making it a fully responsive on all devices
 
-#Team
+# Team
 
 Designer: Cheyenne Dockstader
 
