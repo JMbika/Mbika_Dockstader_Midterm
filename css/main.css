@@ -23,7 +23,7 @@ h1 {
 
 h2 {
     font-family:'Gothic A1', sans-serif;
-    font-size: 1.5em;
+    font-size: 35px;
     color: #696969;
 }
 
@@ -47,7 +47,7 @@ h3 {
 /*** background Video **/
 #video-background{
     position:absolute;
-    top:0;
+    top: 0;
 }
 
 .video-overlay{
@@ -55,9 +55,9 @@ h3 {
     width: 1024px;
     height: 576px;
     top: 0;
-    background: darkgreen;
+    background: #556B2F;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.8;
 }
 
 .header-container{
@@ -80,11 +80,13 @@ h3 {
     padding-top: 12px;
     position: fixed;
     z-index: 2;
+    background: white;
 }
 
-#logo {
+#logo svg{
 	height: 100px;
 	width: 100px;
+    overflow: hidden;
 }
 #header-nav {
 	display: flex;
@@ -116,32 +118,34 @@ h3 {
     align-self: center;
 }
 
-.sub-nav li img{
+.sub-nav li svg{
     align-self: center;
 }
-.socialMediaIcons img{
+.socialMediaIcons svg{
     height: 30px;
     width: 30px;
     align-self: center;
+    color: #696969;
 }
 
 .support{
     height: 30px;
     color: #fff;
-    background-color: green;
     align-items: center;
     padding: 5px 10px;
     border-radius: 5%;
 }
 #donate{
-    background-color: lime;
+    background-color: #99c61b;
 }
 #membership{
-    background-color: purple;
+    color: #696969;
 }
 
-#shop{
-    background-color: pink;
+.support svg{
+    height: 30px;
+    width: 30px;
+    color: #696969;
 }
 
 .sub-nav a:hover{
@@ -164,11 +168,11 @@ h3 {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 13px;
-    color: white;
+    color: #696969;
 }
 
 .main-nav a:hover {
-	color: #333;
+	color: #99c61b;
 }
 
 .welcome{
@@ -247,7 +251,7 @@ h3 {
     padding-top: 30px;
 }
 .eventDetails p{
-    font-size: 12px;
+    font-size: 14px;
 }
 .eventDate{
     display: flex;
@@ -261,18 +265,7 @@ h3 {
     color: orange !important;
 }
 
-button{
-    font-weight: 500px;
-    font-size: 14px;
-    text-transform: capitalize;
-    cursor: pointer;
-    text-align: center;
-    vertical-align: middle;
-    height: 40px;
-    padding: 0 20px;
-    border-radius: 30px;
 
-}
 
 /************ PROJECTS ************/
 
@@ -331,6 +324,27 @@ button{
     overflow: hidden;
 }
 
+button{
+    font-weight: 500px;
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 30px;
+    margin: 0;
+    border: 0;
+
+}
+
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
 .featured-projects button{
     margin-top: 7px;
     color: white;
@@ -352,9 +366,9 @@ button{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    width: 100%;
+    width: 1024px;
     height: 440px;
-    background-image: url("../images/thames_river.jpg");
+    background-image: url("../images/Thames_river.jpg");
     background-repeat: no-repeat;
     position: relative;
 }
@@ -403,11 +417,13 @@ button{
     overflow: hidden;
 }
 
-.getInvolve img{
+.getInvolve svg{
     width: 100px;
     height: 100px;
-    background-color: grey;
-    margin: auto;
+    color: #fff !important;
+    stroke: 0;
+    stroke-width: 0;
+
 }
 
 .getInvolve h3{
@@ -439,32 +455,43 @@ button{
     border: 2px solid #99c61b;
 }
 
-
-/*** PARTNERS ***/
 #our-partners{
     display: flex;
     flex-direction: column;
-    height: 150px;
+    justify-content: space-between;
+    height: 250px;
     margin-top: 30px;
-    background-color: yellow;
 }
 
+#our-partners h2{
+    font-size: 35px;
+    color: #696969;
+    text-align: center;
+    vertical-align:middle;
+    height: 70px;
+    margin-top: 10px;
+}
 #partners{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 190px;
-    height: 100px;
-    background-color: red;
+    width: 1024px;
+    height: 150px;
+
 }
 
-#partners a img{
+.partners{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 190px;
-    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 198px;
 }
+
+.partners a{
+    justify-content: center;
+    align-self: center;
+}
+
 
 /*** PARTNERS ***/
 #subscribe{
@@ -495,6 +522,7 @@ button{
 
 .form-example #subscribe-button{
     width: 250px;
+    height: 40px;
     color: #000 !important;
     background-color: #fff !important;
     border: 1px solid #fff !important;
@@ -526,7 +554,11 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100px;
+    color: #fff;
+    height: 70px;
+    margin-bottom: 30px;
+    background-color:#333;
+    padding: 20px;
 }
 
 
@@ -554,11 +586,11 @@ button{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 13px;
-    color: ;
+    color: #fff;
 }
 
 .footer-nav a:hover {
-	color: #333;
+	color: #99c61b;
 }
 
 #footer-icons{
@@ -578,22 +610,22 @@ button{
    text-decoration: none;
    text-transform: uppercase;
    font-size: 13px;
-   color: #99c61b;
+
 }
 
 .footer-icons li {
    align-self: center;
 }
 
-.footer-icons li img{
+.footer-icons li svg{
    align-self: center;
 }
-.socialMediaIcons img{
+.footer-icons .socialMediaIcons svg{
    height: 30px;
    width: 30px;
    align-self: center;
+   color: #fff !important;
 }
-
 
 #copyright p{
     text-align: center;
@@ -610,7 +642,6 @@ button{
     flex-direction: column;
     justify-content: space-between;
     width: 1024px;
-	margin: 150px auto;
 	background-color: #fff;
 
 }
@@ -623,6 +654,7 @@ button{
     text-transform: capitalize;
     text-align: center;
     padding-top: 40px;
+    margin-top: 100px;
     height: 80px;
 }
 
@@ -735,9 +767,9 @@ input, textarea  {
 	padding-left: 10px;
 	padding-top: 5px;
 	padding-bottom: 2px;
-	background-color: #009590;
+	background-color: #99c61b;
 	font-size: 14px;
-	border: 1px solid #009590;
+	border: 1px solid #99c61b;
 	/*margin-left: 275px;*/
 }
 
@@ -750,7 +782,7 @@ input, textarea  {
 /************ PROJECTS PAGE ************/
 #main-project{
     width: 1024;
-    margin: 150px auto;
+    margin: 0 auto;
 }
 #our-projects{
     display: flex;
